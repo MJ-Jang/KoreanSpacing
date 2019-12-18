@@ -89,7 +89,6 @@ class TrainOperator:
         # for data parallel
         if self.cuda:
             self.n_gpu = torch.cuda.device_count()
-            self.n_gpu = 1
 
         else:
             self.n_gpu = 0
